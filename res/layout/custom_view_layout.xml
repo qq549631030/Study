@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.example.myandroid.views.GifMovieView
+        android:id="@+id/gifView1"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+    <com.example.myandroid.views.AnimationView
+        android:id="@+id/animationView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:visibility="gone" />
+
+    <com.example.myandroid.views.CircleImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_launcher"
+        app:border_in_color="#00000000"
+        app:border_in_width="5dp"
+        app:border_out_color="#00FF00"
+        app:border_out_width="5dp" />
+
+    <com.example.myandroid.views.HKImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_launcher" />
+
+    <com.example.myandroid.views.BezierView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</LinearLayout>
