@@ -36,6 +36,7 @@ import com.example.myandroid.push.MessagePushUtils;
 import com.example.myandroid.utils.FileUtil;
 import com.example.myandroid.utils.FileOptionListener;
 import com.example.myandroid.views.AnimationView;
+import com.example.myandroid.views.BadgeView;
 import com.example.myandroid.views.CircleProgressView;
 import com.example.myandroid.xml.BookParser;
 import com.example.myandroid.xml.PullBookParser;
@@ -109,14 +110,18 @@ public class HomeFragment extends Fragment implements OnClickListener {
 			// mCircleProgressView.setSubText("步");
 			// mCircleProgressView.setProgress(mProgress);
 			// mCircleProgressView.flashView(1000);
+			// 角标
+			// ContentValues cv = new ContentValues();
+			// cv.put("package", getActivity().getPackageName());
+			// cv.put("class", "com.example.myandroid.SplashActivity");
+			// cv.put("badgecount", 1);
+			// getActivity().getContentResolver().insert(
+			// Uri.parse("content://com.sec.badge/apps"), cv);
 
-			ContentValues cv = new ContentValues();
-			cv.put("package", getActivity().getPackageName());
-			cv.put("class", "com.example.myandroid.SplashActivity");
-			cv.put("badgecount", 1);
-			getActivity().getContentResolver().insert(
-					Uri.parse("content://com.sec.badge/apps"), cv);
-
+			BadgeView mBadgeView = new BadgeView(getActivity(), mButton1);
+			mBadgeView.setText("1");
+			mBadgeView.show();
+			
 			break;
 		case R.id.button2:
 			// mProgress = mProgress - 0.05f;

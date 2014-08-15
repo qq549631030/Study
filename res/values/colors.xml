@@ -16,5 +16,9 @@
     <color name="transparent">#00000000</color>
     <color name="window_bg">#88838B8B</color>
     <color name="crop_background">#737373</color>
-
+    <color name="holo_blue">#33b5e5</color>
+    <color name="holo_purple">#aa66cc</color>
+    <color name="holo_green">#99cc00</color>
+    <color name="holo_orange">#ffbb33</color>
+    <color name="holo_red">#ff4444</color>
 </resources>

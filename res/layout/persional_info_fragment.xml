@@ -50,6 +50,10 @@
             android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/textView_email_label"
             android:padding="10dp"
+            android:shadowColor="#40000000"
+            android:shadowDx="0"
+            android:shadowDy="4"
+            android:shadowRadius="2"
             android:text="Medium Text"
             android:textAppearance="?android:attr/textAppearanceMedium" />
     </RelativeLayout>

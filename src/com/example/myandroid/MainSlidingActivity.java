@@ -6,6 +6,7 @@ import java.util.List;
 import cn.bmob.v3.BmobUser;
 import cn.bmob.v3.listener.FindListener;
 
+import com.example.myandroid.activity.TooltipsActivity;
 import com.example.myandroid.bmob.MyFriendShipUtils;
 import com.example.myandroid.bmob.MyMessageUtils;
 import com.example.myandroid.bmob.model.MyFriendShip;
@@ -163,7 +164,7 @@ public class MainSlidingActivity extends FragmentActivity implements
 
 			if (position == 5) {
 				Intent intent = new Intent(MainSlidingActivity.this,
-						TestScrollerActivity.class);
+						TooltipsActivity.class);
 				startActivity(intent);
 				slidingMenu.showContent();
 				return;
