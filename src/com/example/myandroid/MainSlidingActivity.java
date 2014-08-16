@@ -191,8 +191,8 @@ public class MainSlidingActivity extends FragmentActivity implements
 			}
 			FragmentTransaction mTransaction = mFragmentManager
 					.beginTransaction();
-			mTransaction.setCustomAnimations(R.anim.scale_anim1,
-					R.anim.scale_anim2);
+			// mTransaction.setCustomAnimations(R.anim.scale_anim1,
+			// R.anim.scale_anim2);
 			mTransaction.replace(R.id.content_frame, newFragment,
 					"content_frame");
 			mTransaction.commit();

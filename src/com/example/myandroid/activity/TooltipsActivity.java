@@ -3,7 +3,6 @@ package com.example.myandroid.activity;
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 
@@ -12,7 +11,6 @@ import com.example.myandroid.tooltips.ToolTip;
 import com.example.myandroid.tooltips.ToolTip.AnimationType;
 import com.example.myandroid.tooltips.ToolTipRelativeLayout;
 import com.example.myandroid.tooltips.ToolTipView;
-import com.nineoldandroids.view.ViewHelper;
 
 public class TooltipsActivity extends Activity implements View.OnClickListener,
 		ToolTipView.OnToolTipViewClickedListener {
