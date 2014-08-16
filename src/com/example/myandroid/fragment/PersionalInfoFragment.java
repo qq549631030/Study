@@ -29,6 +29,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -79,6 +80,8 @@ public class PersionalInfoFragment extends Fragment implements OnClickListener {
 		emailView.setOnClickListener(this);
 		genderView.setOnClickListener(this);
 		ageView.setOnClickListener(this);
+		Typeface typeface = Typeface.createFromAsset(getActivity().getAssets(), "kaiti.ttf");
+		nicknameView.setTypeface(typeface);
 		initViews();
 		return view;
 	}
